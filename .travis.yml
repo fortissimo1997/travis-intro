@@ -5,6 +5,7 @@ language: ruby
 rvm:
   - '1.9.3'
   - '2.1'
+  - ruby-head
 
 env:
   global:
@@ -12,6 +13,10 @@ env:
   matrix:
     - RAKE_TASK=echo
     - RAKE_TASK=foo
+
+matrix:
+  allow_failures:
+    - rvm: ruby-head
 
 script:
   - bundle exec rake $RAKE_TASK
