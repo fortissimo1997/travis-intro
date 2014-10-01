@@ -5,3 +5,11 @@ language: ruby
 rvm:
   - '1.9.3'
   - '2.1'
+
+env:
+  global:
+    - FOO=bar
+  matrix:
+    - RAKE_TASK=echo
+    - RAKE_TASK=foo
+
