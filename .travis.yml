@@ -19,3 +19,8 @@ script:
 services:
   - redis
   - elasticsearch
+
+addons:
+  postgresql:
+    - '9.2'
+    - '9.3'
