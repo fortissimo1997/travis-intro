@@ -15,3 +15,7 @@ env:
 
 script:
   - bundle exec rake $RAKE_TASK
+
+services:
+  - redis
+  - elasticsearch
