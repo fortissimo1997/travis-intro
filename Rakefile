@@ -1,3 +1,3 @@
 task 'default' do
-  print "Hello, Tokyo"
+  puts "Hello, Tokyo"
 end
