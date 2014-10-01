@@ -13,3 +13,5 @@ env:
     - RAKE_TASK=echo
     - RAKE_TASK=foo
 
+script:
+  - bundle exec rake $RAKE_TASK
